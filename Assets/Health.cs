@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     public float health = 100;
     private float maxhealth;
     public TextMeshProUGUI StackedDMG;
+    public bool isEnemy;
 
 
     private float stackedDamage = 0;
@@ -53,9 +54,28 @@ public class Health : MonoBehaviour
         print(name + " had stackDMG cleared");
     }
 
+    public void Die()
+    {
+
+    }
+
+    public GameObject Win, Lose;
+
     public void TakeDamage(float damage)
     {
         health -= damage;
-        print("Player took "+damage+" dmg");
+        print(name+" took "+damage+" dmg");
+        if(health <= 0)
+        {
+            if(isEnemy)
+            {
+                Win.SetActive(true);
+            }
+            else
+            {
+                Lose.SetActive(true);
+
+            }
+        }
     }
 }
