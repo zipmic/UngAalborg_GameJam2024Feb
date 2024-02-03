@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3cd668759517e424797115eb578e8e48
+guid: 720c217e4f2b79a48840300f07abde1a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,76 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sword swing effekt (1)_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74515082a268247b5843e47a6f3c9ad8
-      internalID: 170225134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sword swing effekt (1)_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 787bd551319c44640a6bfbc0f4b79c1e
-      internalID: -1400180441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sword swing effekt (1)_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 512
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a45e809ca2c44a859fd6e5f8dcb8e61
-      internalID: 884869293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sword swing effekt (1)_3
+      name: Players and enemys_0
       rect:
         serializedVersion: 2
         x: 0
         y: 256
-        width: 256
-        height: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +150,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3340caf6409640e4937c5cc4cbde4dc
-      internalID: 1205624218
+      spriteID: 178c0e067258049ae8c3454f31809529
+      internalID: -1309023425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sword swing effekt (1)_4
+      name: Players and enemys_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f49c8d546e64129a9b018e3140fec4
+      internalID: 2069010364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Players and enemys_2
       rect:
         serializedVersion: 2
         x: 256
         y: 256
-        width: 256
-        height: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b0cb17b7d12d45b0a9f887464a449de
-      internalID: 246962714
+      spriteID: 4565e6f5c9b804a8bb5f72b89d0d787d
+      internalID: -945529026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sword swing effekt (1)_5
+      name: Players and enemys_3
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +213,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eeb45d8f169f433392bc7e1410e31e7
-      internalID: -1138989679
+      spriteID: 759d88ae591924956b392d765c00679a
+      internalID: 673222741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sword swing effekt (1)_6
+      name: Players and enemys_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6695c63093fcf4cbaa89158032862b80
+      internalID: 302101678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Players and enemys_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea1f4312fb774606b26bff6e429120c
+      internalID: -2083322585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Players and enemys_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,29 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2decd92cabf364f1b8877c115c78c1d3
-      internalID: -458017062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sword swing effekt (1)_7
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6678207b7bec4e599310d057d299889
-      internalID: -1040613024
+      spriteID: 0ad8a5af39ef442b281e81a209b062d2
+      internalID: 1744281089
       vertices: []
       indices: 
       edges: []
@@ -314,14 +293,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sword swing effekt (1)_0: 170225134
-      sword swing effekt (1)_1: -1400180441
-      sword swing effekt (1)_2: 884869293
-      sword swing effekt (1)_3: 1205624218
-      sword swing effekt (1)_4: 246962714
-      sword swing effekt (1)_5: -1138989679
-      sword swing effekt (1)_6: -458017062
-      sword swing effekt (1)_7: -1040613024
+      Players and enemys_0: -1309023425
+      Players and enemys_1: 2069010364
+      Players and enemys_2: -945529026
+      Players and enemys_3: 673222741
+      Players and enemys_4: 302101678
+      Players and enemys_5: -2083322585
+      Players and enemys_6: 1744281089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
