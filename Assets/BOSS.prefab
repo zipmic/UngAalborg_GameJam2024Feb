@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 6639017149265048076}
   - component: {fileID: 6304799762163678562}
   - component: {fileID: 8315431752723168877}
+  - component: {fileID: 6012669293853160302}
   m_Layer: 0
   m_Name: BOSS
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +114,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.29, y: 1.66, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3942376145623765146}
@@ -201,6 +202,20 @@ MonoBehaviour:
   slashDelay: 1
   Sword: {fileID: 6113861590442357432}
   swordPauseTime: 1
+--- !u!114 &6012669293853160302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4707657215873181129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09c0b022b1604d79b8c6f1c32ebf195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthImage: {fileID: 0}
+  health: 500
 --- !u!1 &6113861590442357432
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,13 +228,14 @@ GameObject:
   - component: {fileID: 2256704191918092449}
   - component: {fileID: 6469566934985284015}
   - component: {fileID: 3947506262582955719}
+  - component: {fileID: 2991083005259247369}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1822066010715247747
 Transform:
   m_ObjectHideFlags: 0
@@ -337,7 +353,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -359,3 +375,16 @@ PolygonCollider2D:
       - {x: -0.23892522, y: -0.13968427}
       - {x: -0.26260412, y: 0.1549873}
   m_UseDelaunayMesh: 0
+--- !u!114 &2991083005259247369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6113861590442357432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a3f5f0ec23b4de49f2e2358a550d26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
