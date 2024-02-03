@@ -8,7 +8,7 @@ public class Reloadetc : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
     }
     public void ResetScene()
     {

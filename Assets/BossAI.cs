@@ -38,7 +38,7 @@ public class BossAI : MonoBehaviour
             }
         }
 
-        moveSpeed = StartSpeed * (1+(MyHealth.GetStackedDamage()/5));
+        moveSpeed = StartSpeed * (1+(MyHealth.GetStackedDamage()/10));
     }
     private void FixedUpdate()
     {

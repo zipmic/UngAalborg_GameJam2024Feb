@@ -40,7 +40,7 @@ public class TotemPower : MonoBehaviour
                         if (i == amountOfChecks - 1)
                         {
                             health.UnleashStackedDamage();
-                            gameObject.SetActive(false);
+                            
 
                         }
                         else
@@ -54,7 +54,7 @@ public class TotemPower : MonoBehaviour
             {
                 GameObject spawn = Instantiate(SpawnWhenDestroyed) as GameObject;
                 spawn.transform.position = transform.position;
-
+                gameObject.SetActive(false);
             }
         }
     }

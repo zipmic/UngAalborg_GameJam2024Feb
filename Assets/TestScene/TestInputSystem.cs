@@ -12,12 +12,16 @@ public class TestInputSystem : MonoBehaviour
 
 	public Transform playersprite;
 
+	public float TotemCooldown = 5;
+	private float totemCDcounter;
+
 	private void Awake()
 	{
 		_rb = GetComponent<Rigidbody2D>();
 		_playerInputActions = new PlayerInputActions();
 		_playerInputActions.Player.Enable();
 		_playerInputActions.Player.Place.performed += PlaceTotem;
+		
 	}
 
 	private void Update()
@@ -26,17 +30,23 @@ public class TestInputSystem : MonoBehaviour
 		
 		_rb.velocity = new Vector3(inputVector.x,inputVector.y,0) * Speed;
 		playersprite.up = _rb.velocity.normalized * -1;
+
+		totemCDcounter -= Time.deltaTime;
 	}
 
 	public GameObject Totem;
 
 	public void PlaceTotem(InputAction.CallbackContext context)
     {
-        //print("Jump!" + context.phase);
-		if (context.performed)
+		if (totemCDcounter < 0)
 		{
-			GameObject tmp = Instantiate(Totem) as GameObject;
-			tmp.transform.position = transform.position;
+			//print("Jump!" + context.phase);
+			if (context.performed)
+			{
+				GameObject tmp = Instantiate(Totem) as GameObject;
+				tmp.transform.position = transform.position;
+				totemCDcounter = TotemCooldown;
+			}
 		}
     }
 
