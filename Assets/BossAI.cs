@@ -10,15 +10,21 @@ public class BossAI : MonoBehaviour
     public float rotationSpeed = 10f;
     public float slashDelay = 1f;
 
+    private Health MyHealth;
+
     public GameObject Sword;
 
     private Rigidbody2D rb;
     public float swordPauseTime;
     private float swordpausecounter;
+    private float StartSpeed;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        MyHealth = GetComponent<Health>();
+        StartSpeed = moveSpeed;
+     
     }
 
     private void Update()
@@ -31,6 +37,8 @@ public class BossAI : MonoBehaviour
                 swordpaused = false;
             }
         }
+
+        moveSpeed = StartSpeed * (1+(MyHealth.GetStackedDamage()/5));
     }
     private void FixedUpdate()
     {
